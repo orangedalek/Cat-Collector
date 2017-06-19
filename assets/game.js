@@ -14,30 +14,56 @@ var wins = 0;
 // losses
 var losses = 0;
 // userscore - sum of clicks on cat buttons
-var userScore = 0;
+var score = 0;
 
 
 // start game on click
-$("#startBtn").on("click", function() {
-// use math random to generate computerGuess - This is working!
+$('#startBtn').click(function() {
+// use math random to generate computerGuess - This is working! now connect it to html!-done.
 	var computerGuess = Math.floor(Math.random()*100 + 25);
 	console.log(computerGuess);
+	$('#compGuess').html(computerGuess);
 		});
 // generate number for nisu
 // generate number for olive
 // generate number for bikini
 // generate number for zailie
 // start with fixed values until game is working, then switch to random
+// clicking on cats adds to userScore
+$('#nisu').click(function() {
+	score = score + nisuScore;
+	console.log(score);
+	$('#userScore').html(score);
+
+	});
+$('#olive').click(function(){
+	score = score + oliveScore;
+	console.log(score);
+	$('#userScore').html(score);
+})
+$('#bikini').click(function(){
+	score = score + bikiniScore;
+	console.log(score);
+	$('#userScore').html(score);
+})
+$('#zailie').click(function(){
+	score = score + zailieScore;
+	console.log(score);
+	$('#userScore').html(score);
+})
 // use a while loop to keep game runnig as long as userScore is less than computerGuess
 	while(userScore < computerGuess){
-		$('#nisu').on('click', function() {
-			userscore = userScore + nisu;
-			console.log(userScore);
-	})
+// when userScore = computerGuess, game ends in a win. win counter + 1
+		if(userScore = computerGuess){
+			wins ++;
+			break;
+		else if(userScore > computerGuess){
+			losses ++;
+			break;
+		}
+		}
 }
 
 
-// clicking on catts adds to userScore
-// when userScore = computerGuess, game ends in a win. win counter + 1
 // if userScore goes over computerGuess, game ends in a loss. loss counter +1
 // game starts over
