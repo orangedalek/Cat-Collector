@@ -12,16 +12,18 @@ body{
 #compGuessScore,
 #scoreBox,
 #yrScore,
+#catBoxHolder,
 .catBox,
 #userScoreBox{
 	background-color: white;
 	border: 1px solid grey;
 }
+
 #gameTitle{
 	text-align: center;
-		
+
 }
-#compGuess,
+#compGuessScore,
 #scoreBox{
 	height: 100px;
 }
