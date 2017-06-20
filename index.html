@@ -7,62 +7,67 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="assets/reset.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/style.css">
 </head>
 <body>
 	<!-- container for entire document -->
 	<div class="container" id="gameBackground">
 	<!-- container for title -->
-		<div class="row" id="gameTitle" >
-			<div class="col-md-5">
+		<div class="row" >
+			<div class="col-md-5" id="gameTitle">
 				<h2>=^..^= Cat Collector! =^..^=</h2>
 			</div>
 		</div>
 	<!-- instructions section -->
-		<div class="row" id="instructionsDiv">
-			<div class="col-md-5">
-				<p>instructions will go here. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood.</p>
+		<div class="row">
+			<div class="col-md-5" id="instructionsDiv">
+				<p>Click the start button to begin!</p>
+				<p>When you click on each cat, they will gift you a different amount of points to add to your score.</p>
+				<p>Match your score to the number below to win!</p>
 				<button id="startBtn">Start Game!</button>
 			</div>
 		</div>		
 	<!-- row containing computerGuess and scoreDiv -->
-	<div class="row" id="compGuessScore">
+	<div class="row">
 	<!-- column for compurtGuess div -->
-		<div class="col-md-3" id="compGuessBox">
+		<div class="col-md-3"  id="compGuessScore">
 			<p id="compGuess">0</p>	
 		</div>
 	<!-- column for scoreDiv -->
-		<div class="col-md-2">
-			<p id="wins">Wins:</p>
-			<p id="losses">Losses:</p>
+		<div class="col-md-2" id="scoreBox">
+			<p id="wins">Wins: 0</p>
+			<p id="losses">Losses: 0</p>
 		</div>
 	</div>
 	<!-- row for cat 1 - cat 4 -->
-	<div class="row" id="catBox">
+	<div class="row">
 	<!-- column for cat 1 -->
-		<div class="col-md-1">
+		<div class="col-md-1 catBox">
 			<img id="nisu" src="assets/images/nisuRead.jpg">
 		</div>
 	<!-- column for cat 2 -->
-		<div class="col-md-1">
+		<div class="col-md-1 catBox">
 			<img id="olive" src="assets/images/oliveYawn.jpg">
 		</div>
 	<!-- column for cat 3 -->
-		<div class="col-md-1">
+		<div class="col-md-1 catBox">
 			<img id="bikini" src="assets/images/bikiniKill.jpg">
 		</div>
 	<!-- column for cat 4 -->
-		<div class="col-md-1">
+		<div class="col-md-1 catBox">
 			<img id="zailie" src="assets/images/zailieBox.jpg">
 		</div>
 	</div>
 	<!-- tiny row for userScore title -->
-	<div class="row" id="userScoreInfo">
-		<h4>Your score</h4>
+	<div class="row">
+		<div class="col-md-5" id="yrScore">
+			<h4 id="userScoreInfo">Your score</h4>
+		</div>
 	</div>
 	<!-- row for userScore -->
 	<div class="col-md-5" id="userScoreBox">
-		<p id="userScore">User score goes here</p>
+		<p id="userScore">0</p>
 	</div>
 </div>	
 </body>

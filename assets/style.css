@@ -1,3 +1,48 @@
-*{
+/**{
 	outline: 1px solid red;
+}*/
+
+body{
+	font-family: 'Josefin Sans', sans-serif;
+	background: url("../assets/images/catWallpaper.jpg")
+
+}
+#gameTitle,
+#instructionsDiv,
+#compGuessScore,
+#scoreBox,
+#yrScore,
+.catBox,
+#userScoreBox{
+	background-color: white;
+	border: 1px solid grey;
+}
+#gameTitle{
+	text-align: center;
+		
+}
+#compGuess,
+#scoreBox{
+	height: 100px;
+}
+#compGuess{
+	font-size: 50px;
+	text-align: center;
+}
+#scoreBox{
+	font-size: 25px;
+}
+
+#userScoreBox{
+	height: 100px;
+	text-align: center;
+	font-size: 50px;
+	padding-top: 10px;
+}
+#userScoreInfo{
+	font-size: 30px;
+}
+
+img{
+	width: 80px;
 }
