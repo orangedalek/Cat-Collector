@@ -2,13 +2,13 @@
 // computerGuess -randomly generated number between 25 and 100
 // var computerGuess = 0;
 // nisu - randomly generated number between 1 and 20
-var nisuScore = 7;
+var nisuScore = Math.floor(Math.random()*15 + 1);
 // olive - randomly generated number between 1 and 20 start with fixed values until game is working, then switch to random
-var oliveScore = 1;
+var oliveScore = Math.floor(Math.random()*15 + 1);
 // bikini - randomly generated number between 1 and 20
-var bikiniScore = 9;
+var bikiniScore = Math.floor(Math.random()*15 + 1);
 // zailie - randomly generated number between 1 and 20
-var zailieScore = 15;
+var zailieScore = Math.floor(Math.random()*15 + 1);
 // wins
 var wins = 0;
 // losses
@@ -95,6 +95,13 @@ function checkWins(){
 
 function reset(){
 	computerGuess = Math.floor(Math.random()*100 + 25);
+	var nisuScore = Math.floor(Math.random()*15 + 1);
+// olive - randomly generated number between 1 and 20 start with fixed values until game is working, then switch to random
+	var oliveScore = Math.floor(Math.random()*15 + 1);
+// bikini - randomly generated number between 1 and 20
+	var bikiniScore = Math.floor(Math.random()*15 + 1);
+// zailie - randomly generated number between 1 and 20
+	var zailieScore = Math.floor(Math.random()*15 + 1);
 	score = 0;
 	$('#userScore').html(score);
 	$('#compGuess').html(computerGuess);
