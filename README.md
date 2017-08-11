@@ -13,4 +13,4 @@ If you match the random number, you are alerted that you won and a new game will
 
 If you go over the random number, you will be alerted that you lost and a new game will begin.
 
-(/assets/images/cat4.jpg)
+![Loss](/assets/images/cat4.jpg)
