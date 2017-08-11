@@ -101,7 +101,7 @@ function reset(){
 // bikini - randomly generated number between 1 and 20
 	var bikiniScore = Math.floor(Math.random()*15 + 1);
 // zailie - randomly generated number between 1 and 20
-	var zailieScore = Math.floor(Math.random()*15 + 1);
+var zailieScore = Math.floor(Math.random()*15 + 1);
 	score = 0;
 	$('#userScore').html(score);
 	$('#compGuess').html(computerGuess);
